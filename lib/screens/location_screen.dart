@@ -80,7 +80,6 @@ class _LocationScreenState extends State<LocationScreen> {
                         context,
                         MaterialPageRoute(builder: (context) => CityScreen()),
                       );
-                     print(typedName);
                      if(typedName != null) {
                           var weatherData = await weatherModel.getCityWeather(typedName);
                           updateUI(weatherData);
